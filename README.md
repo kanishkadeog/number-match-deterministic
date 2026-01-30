@@ -1,5 +1,8 @@
 # Number Match Puzzle – Deterministic Difficulty System
 
+## Deploy
+https://regal-chebakia-f8dcc2.netlify.app/
+
 ## Overview
 This project implements a classic Number Match Puzzle Game using a deterministic difficulty system instead of RNG.
 
