@@ -1,18 +1,36 @@
-## Number Match Puzzle – Deterministic System
+# Number Match Puzzle – Deterministic Difficulty System
 
-This project replaces RNG with a deterministic difficulty-controlled system.
+## Overview
+This project implements a classic Number Match Puzzle Game using a deterministic difficulty system instead of RNG.
 
-### Core Ideas
-- Sawtooth difficulty curve
-- Guaranteed solvable boards
-- Smart add-row injection
-- Rescue mechanic for frustration control
+## Key Features
+- Deterministic board seeding (always solvable)
+- Sawtooth difficulty curve with relief levels
+- Rescue mechanic for frustrated players
+- Controlled Add Row logic
+- Match rules: same number or sum to 10
+- Diagonal, vertical, horizontal & wrap-around matches
+- Expo compatible (Web & Android)
+- Written in TypeScript
 
-### Why RNG fails
-Random boards cause impossible states. This system ensures fairness.
+## Tech Stack
+- React Native
+- Expo Router
+- TypeScript
 
-### Difficulty Flow
-Levels increase in difficulty, drop at relief levels (6, 11).
+## How to Run
+```bash
+npm install
+npx expo start
 
-### Completion Guarantee
-95% probability via rescue logic and controlled injections.
+```
+### OPTION 2: APK FILE (ANDROID)
+### Build APK
+```bash
+npx expo prebuild
+npx expo run:android
+```
+or
+```bash
+npx expo build:android
+```
